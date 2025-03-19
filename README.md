@@ -30,6 +30,9 @@ Versão 12 = Atualização da Página de início, do mapa, das outras funções,
 Versão 13 = Adicionado previsão da semana e demais atualização
 Versão 14 = Adicionado nascer do sol/Por do Sol e previsão de chuva além de demais atualizações
 Versão 15 = Atualização de código e limpeza
+Versão Final = A versão Final esta no arquivo versao_final
+
+
 
 
 
