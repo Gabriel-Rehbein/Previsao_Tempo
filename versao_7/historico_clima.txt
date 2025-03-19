@@ -1,0 +1,16 @@
+USE clima;
+
+CREATE TABLE admin_users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE cidades (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    latitude FLOAT NOT NULL,
+    longitude FLOAT NOT NULL
+);
+
+INSERT INTO admin_users (username, password) VALUES ('admin', MD5('123456')); -- Usuário inicial

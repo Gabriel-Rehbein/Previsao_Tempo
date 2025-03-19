@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.weather-box {
+    padding: 20px;
+}
+
+.temperature {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.weather-icon {
+    width: 80px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.forecast-day {
+    text-align: center;
+}
+
+.weather-icon-small {
+    width: 40px;
+}
+
+.city-form select {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.theme-button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dark-mode {
+    background: linear-gradient(to right, #121212, #232323);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}

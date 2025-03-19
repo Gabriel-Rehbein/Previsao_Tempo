@@ -1,0 +1,11 @@
+CREATE DATABASE clima;
+USE clima;
+
+CREATE TABLE historico_clima (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cidade VARCHAR(100),
+    temperatura FLOAT,
+    descricao VARCHAR(255),
+    umidade INT,
+    data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.weather-box {
+    padding: 20px;
+}
+
+.temperature {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.humidity {
+    font-size: 16px;
+    opacity: 0.8;
+}

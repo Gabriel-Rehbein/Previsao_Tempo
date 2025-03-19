@@ -1,0 +1,48 @@
+CREATE DATABASE clima;
+USE clima;
+
+-- Tabela de Usuários Administradores
+CREATE TABLE admin_users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL, -- Senha armazenada diretamente (sem hash)
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabela de Cidades
+CREATE TABLE cidades (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    latitude FLOAT NOT NULL,
+    longitude FLOAT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabela para Previsões Personalizadas
+CREATE TABLE previsoes_customizadas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cidade_id INT NOT NULL,
+    descricao VARCHAR(255) NOT NULL,
+    temperatura_min FLOAT NOT NULL,
+    temperatura_max FLOAT NOT NULL,
+    data_prevista DATE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (cidade_id) REFERENCES cidades(id) ON DELETE CASCADE
+);
+
+-- Tabela de Logs de Administradores
+CREATE TABLE admin_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    admin_id INT NOT NULL,
+    acao VARCHAR(255) NOT NULL,
+    data_hora TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (admin_id) REFERENCES admin_users(id) ON DELETE CASCADE
+);
+
+-- Inserindo um Administrador Inicial
+INSERT INTO admin_users (username, password) VALUES ('admin', '123456');
+
+-- Inserindo Cidades Padrão
+INSERT INTO cidades (nome, latitude, longitude) VALUES 
+('São Paulo', -23.5505, -46.6333),
+('Rio de Janeiro', -22.9068, -43.1729);
