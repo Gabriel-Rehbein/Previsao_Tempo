@@ -10,21 +10,12 @@
 
 <body>
 
-    <!-- Tela de carregamento -->
-    <div class="preloader">
-        <div class="loader">
-            <div class="cloud"></div>
-            <div class="sun"></div>
-        </div>
-        <p>Carregando...</p>
-    </div>
 
     <!-- Conteúdo da página -->
-    <div class="container fade-in">
+    <div class="section">
         <h1>Outras Funções</h1>
         <p>Explore as ferramentas adicionais do Projeto Clima.</p>
 
-        <div class="section">
             <h2>📞 Suporte</h2>
             <p>Entre em contato com nossa equipe de suporte preenchendo o formulário abaixo.</p>
             
@@ -34,7 +25,7 @@
                 <textarea name="mensagem" placeholder="Sua mensagem..." required></textarea>
                 <button type="submit" class="btn">Enviar</button>
             </form>
-        </div>
+
 
         <a href="index.php" class="btn back-btn">⬅️ Voltar</a>
     </div>

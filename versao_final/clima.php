@@ -67,9 +67,10 @@ $weather_phrase = generateWeatherPhrase($temperature, $humidity, $wind_speed, $w
         </div>
 
         <h2>Temperatura ao longo do dia</h2>
-        <div class="chart-container">
+      
             <canvas id="tempChart"></canvas>
-        </div>
+       
+        <a href="index.php" class="btn back-btn">⬅️ Voltar</a>
     </div>
 
     <script>

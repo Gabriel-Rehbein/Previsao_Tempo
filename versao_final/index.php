@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>
-
     <!-- Tela de carregamento -->
     <div class="preloader">
         <div class="loader">
             <div class="cloud"></div>
             <div class="sun"></div>
         </div>
-        <p>Carregando...</p>
+        <p>Gabriel Menezes Rehbein</p>
     </div>
+<body>
 
     <!-- Página principal (escondida até o carregamento terminar) -->
     <div class="container fade-in">
